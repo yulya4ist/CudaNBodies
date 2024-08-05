@@ -1,0 +1,8 @@
+#!/bin/sh
+#SBATCH --job-name=lab4_Chistyakova_cuda
+#SBATCH --time=00:06:00
+#SBATCH --nodes=1 --cpus-per-task=1
+#SBATCH --partition=release
+#ulimit -l unlimited
+
+mpirun -np 1 /nethome/student/FS20/FS2-x1/Chistyakova_Vishnevskiy/lab4/run
